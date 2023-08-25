@@ -12,9 +12,6 @@ const Card = (props) =>{
                     </p>
                     <button className="card__button">Pruebelo</button>
                 </div>
-                <div className="card__descuento">
-                    {props.circle}
-                </div>
             </article>
         </section>
     )

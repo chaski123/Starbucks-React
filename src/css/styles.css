@@ -19,22 +19,32 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
     z-index: 100;
   }
   
   .header-container__img {
-    width: 30px;
+    width: 40px;
   }
   
   .header-nav,
   .header-login {
     display: none;
-    /* color: #fff;
-      text-decoration: none;
-      margin-left: 15px; */
+  }
+
+  .header-login .IconUser {
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .header-container__user__mobile .Icon{
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    cursor: pointer;
   }
   
   .header-container__user__mobile {
@@ -45,7 +55,7 @@
   /* MAIN */
   .main-container {
     padding: 15px;
-    margin-top: 70px;
+    margin-top: 10px;
   }
   
   .main-container__principal {
@@ -101,6 +111,7 @@
   .contact__form {
     background-color: #006241;
     padding: 15px 10px;
+    width: 100%;
   }
   
   .contact__form textarea {
@@ -160,12 +171,13 @@
     background-color: yellow;
     color: #000;
   }
+
   /* CARDS */
   .cards-container {
     background-color: #fff;
     width: 100%;
     padding: 25px 40px;
-    
+    position: relative;
   }
   
   .card {
@@ -175,21 +187,13 @@
     padding-bottom: 10px;
   }
   
-  .card__titulo {
-    font-size: 26px;
-  }
+  .card__titulo {font-size: 26px;}
   
-  .card__parrafo {
-    font-size: 16px;
-  }
+  .card__parrafo {font-size: 16px;}
   
-  .card__titulo span {
-    color: yellow;
-  }
+  .card__titulo span {color: yellow;}
   
-  .card__img {
-    width: 100%;
-  }
+  .card__img {width: 100%;}
   
   .card__button {
     background-color: inherit;
@@ -214,23 +218,6 @@
     padding: 0 15px;
   }
   
-  .card__descuento {
-    background-color: yellow;
-    border-radius: 50%;
-    color: #000;
-    font-size: 18px;
-    font-weight: bolder;
-    text-align: center;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    right: -25px;
-    top: -25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
   .footer-container {
     display: flex;
     flex-direction: column;
@@ -248,9 +235,8 @@
   }
   
   .footer-container__redes-sociales i {
-    font-size: 24px;
     padding: 0 10px;
-    cursor: pointer;
+    font-size: 20px;
   }
   
   .footer-container__contacto {
@@ -264,15 +250,10 @@
     color: #006241;
     text-decoration: none;
   }
-  .whatsapp:hover {
-    color: #25d366;
-  }
-  .facebook:hover {
-    color: #4267b2;
-  }
-  .twitter:hover {
-    color: #1da1f2;
-  }
+  
+  .WhatsAppIcon:hover {color: #25d366;}
+  .FacebookIcon:hover {color: #4267b2;}
+  .TwitterIcon:hover {color: #1da1f2;}
   
   @media (min-width: 768px) {
     .header-container__user__mobile {

@@ -2,6 +2,7 @@ import React from "react";
 import "../css/styles.css";
 import LOGO from '../img/starbucks.png'
 import BtnHeader from "./BtnHeader";
+import { ListIcon, UserIcon } from "../assets";
 
 const Header = () => {
   return (
@@ -25,10 +26,10 @@ const Header = () => {
           <BtnHeader class={'header-nav__link'} content={'Delivery'} href={'#'}/>
         </nav>
         <div className="header-login">
-          <i className="bi bi-person-circle"></i>
+          <UserIcon className="IconUser"/>
         </div>
         <div className="header-container__user__mobile">
-          <i className="bi bi-list"></i>
+          <ListIcon className="Icon"/>
         </div>
       </header>
     </>
